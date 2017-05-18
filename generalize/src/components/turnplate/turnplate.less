@@ -1,0 +1,683 @@
+ @lunaBackground: #fcca05;
+    @residueTime: #ff9002;
+    @fontcolor: #ff9302;
+    @fontwhite: #fffaeb;
+    @nameListBackground: #fea702;
+    @nameListBorder: #fe9106;
+    @nameListTittle: #dd003e;
+    @loginBtnBackground: #174994;
+    @white: #ffffff;
+    @bottomLine: #c1c1c1;
+    @buttonBackgroundBlue: #103e6d;
+    @alertRed: #ff0119;
+    @jackpotYellow: #ffcc05;
+    @liBackground: #ffeab1;
+    @grayBack: #ecf0f1;
+
+    .turnplate{
+        position: relative;
+        
+        .head-background{
+            position: relative;
+            width: 100%;
+            height: 28.5rem;
+            background: url(../../assets/head_background.png) no-repeat center center;
+            background-size: cover;   
+            
+            .head-element{
+                position: absolute;
+                left: 50%;
+                top: 3rem;
+                z-index: 60;
+                width: 30rem;
+                height: 100%;
+                margin-left: -15rem;
+                background: url(../../assets/head_element_new.png) no-repeat center center;
+                background-size: contain;
+            }
+            .head-timer{
+                position: absolute;
+                left: 50%;
+                top: 13.5rem;
+                z-index: 100;
+                width: 20rem;
+                height: 3rem;
+                margin-left: -10rem;
+                background: url(../../assets/timer.png) no-repeat center center;
+                background-size: contain;
+            }
+            .head-star{
+                position: absolute;
+                left: 0;
+                top: -6/3rem;
+                z-index: 50;
+                width: 100%;
+                height: 25rem;
+                background: url(../../assets/head_star.png) no-repeat center center;
+                background-size: contain;
+            }
+            
+            .head-word{
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                z-index: 10;
+                width: 28rem;
+                height: 10rem;
+                margin-top: -10.5rem;
+                margin-left: -14rem;
+                background: url(../../assets/head_word.png) no-repeat center center;
+                background-size: contain;
+            }
+            
+            .luna-back{
+                position: absolute;
+                left: 0;
+                bottom: -1rem;
+                z-index: 40;
+                width: 100%;
+                height: 33.8/3rem;
+                background: url(../../assets/luna.png) no-repeat center center;
+                background-size: contain;
+            } 
+            
+            .free-login-btn{
+                position: absolute;
+                right: 1rem;
+                top: 1rem;
+                z-index: 100;
+                display: block;
+                width: 7rem;
+                height: 3rem;
+                border-radius: 1.5rem;
+                background: @loginBtnBackground;
+                color: @fontwhite;
+                
+                p{  
+                    font-size: 1.2rem;
+                    line-height: 3rem;
+                    text-align: center;
+                }
+            }
+            .free-logined-info{
+                position: absolute;
+                right: 1rem;
+                top: 1rem;
+                z-index: 100;
+                display: block;
+                width: 8rem;
+                height: 3rem;
+                color: @fontwhite;
+                
+                p{  
+                    width: 100%;
+                    text-decoration: underline;
+                    font-size: 1.2rem;
+                    line-height: 3rem;
+                    text-align: center;
+                }
+                
+                .logined-msg-list{
+                    width: 8rem;
+                    height: 3rem;
+                    
+                    li{
+                        text-align: center;
+                        line-height: 3rem;
+                        background: @loginBtnBackground;
+                    }
+                }
+            }
+        }
+        
+        .luna-content{
+            position: absolute;
+            top: 28rem;
+            z-index: 50;
+            width: 100%;
+            min-height: 125.5/3rem;
+            background: @lunaBackground;
+            
+            .residue-chance{
+                position: absolute;
+                top: -4rem;
+                left: 50%;
+                width: 22rem;
+                height: 3rem;
+                margin-left: -11rem;
+                background: url(../../assets/residue_chance.png) no-repeat center center;
+                background-size: cover;
+                
+                .residue-times{
+                    position: absolute;
+                    left: 10.3rem;
+                    top: 0.1rem;
+                    z-index: 100;
+                    color: @residueTime;
+                    font-size: 3rem;
+                    font-weight: bolder;
+                }
+            }
+            
+            .turnplate-content{
+                position: relative;
+                
+                .turnplate-disk{
+                    width: 25rem;
+                    height: 25rem;
+                    margin: 0 auto;
+                    background: url(../../assets/turnplate.png) no-repeat center center;
+                    background-size: contain;
+    //              旋转跳跃我不停歇
+    //              transition: 5s;
+    //              transform: rotate(0deg);
+    //              animation-fill-mode : forwards;
+                }
+                
+                .pointer{
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    z-index: 10;
+                    width: 5.7rem;
+                    height: 20/3rem;
+                    margin-left: -8.5/3rem;
+                    margin-top: -11/3rem;
+                    background: url(../../assets/turning_btn.png) no-repeat center center;
+                    background-size: contain;
+                }
+                
+                .turnplate-bottom{
+                    position: absolute;
+                    left: 50%;
+                    top: 22rem;
+                    z-index: -1;
+                    width: 15rem;
+                    height: 20/3rem;
+                    margin-left: -7rem;
+                    background: url(../../assets/bott.png) no-repeat center center;
+                    background-size: contain;
+                    
+                    .my-log-btn{
+                        position: absolute;
+                        top: 4rem;
+                        left: 50%;
+                        width: 8rem;
+                        height: 2rem;
+                        margin-left: -4rem;
+                        background: url(../../assets/btn.png) no-repeat center center;
+                        background-size: contain;
+                        font-weight: bolder;
+                        
+                        p{
+                            font-size: 1rem;
+                            text-align: center;
+                            line-height: 2rem;
+                            color: @fontcolor;
+                        }
+                    }
+                }
+            }
+            
+            .download-share-bar{
+                width: 23rem;
+                margin: 0 auto;
+                margin-top: 4rem;
+                
+                .download-btn{
+                    width: 14rem;
+                    height: 4rem;
+                    float: left;
+                    margin-left: 5rem;
+                    background: url(../../assets/download_btn.png) no-repeat center center;
+                    background-size: contain;
+                    
+                    p{
+                        padding-top: 0.7rem;
+                        line-height: 2.5rem;
+                        text-align: center;
+                        font-size: 1.2rem;
+                        font-weight: bolder;
+                        color: @fontwhite;
+                    }
+                }
+                
+                .share-btn{
+                    width: 2.7rem;
+                    height: 2.7rem;
+                    float: left;
+                    margin-left: 1/3rem;
+                    margin-top: 1.5/3rem;
+                    background: url(../../assets/share_btn.png) no-repeat center center;
+                    background-size: contain;
+                }
+            }
+            
+            .name-list-outer{
+                width: 29rem;
+                height: 11rem;
+                margin: 1rem auto;
+                border: 1px solid @nameListBorder;
+                border-radius: 1/3rem;
+                background: @nameListBackground;
+                overflow: hidden;
+                
+                h3{
+                    line-height: 3rem;
+                    font-size: 1.5rem;
+                    font-weight: bold;
+                    text-align: center;   
+                    color: @nameListTittle;
+                }
+                .name-list-scroller{
+                    position: relative;
+                    width: 27rem;
+                    height: 100%;
+                    margin: 0 auto;
+                    overflow: hidden;
+                    
+                    ul{
+                        position: absolute;
+                        top: -2.8rem;
+                        width: 100%;
+                        height: 9.8rem;
+                        overflow: hidden;
+                        font-size: 2/3rem;
+                        
+                        li{
+                            height: 2rem;
+                            line-height: 2rem;
+                            margin-top: 0.4rem;
+                            margin-bottom: 0.4rem;
+                            background: @liBackground;
+                            
+                            .phone-num{
+                            width: 5rem;
+                            display: inline-block;
+                            margin-left: 2rem;
+                            }
+                            
+                            .awards-name{
+                            width: 9rem;
+                            display: inline-block; 
+                            margin-left: 2rem;
+                            }
+                            
+                            .happen-time{
+                                width: 5rem;
+                                display: inline-block;
+                                margin-left: 0.5rem;
+                            }
+                        }
+                    }
+                }
+                
+            }
+            
+            .active-detail{
+                width: 29rem;
+                margin: 0 auto;
+                margin-bottom: 1rem;
+                
+                h3{
+                    line-height: 2rem;
+                    font-size: 1.5rem;
+                    font-weight: bold;
+                }
+                
+                li{
+                    line-height: 2rem;
+                    font-size: 1rem;
+                }
+            }
+        }
+        
+        .login-alert-win{
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            z-index: 1000;
+            display: block;
+            width: 27rem;
+            height: 28rem;
+            margin-left: -13.5rem;
+            margin-top: -15rem;     
+            background: url(../../assets/login_background.png) no-repeat center center;
+            background-size: cover;
+            
+            .close-win{
+                position: absolute;
+                right: -0.9rem;
+                top: -0.9rem;
+                width: 1.8rem;
+                height: 1.8rem;
+                border-radius: 50%;
+                background: url(../../assets/close_icon.png) no-repeat center center;
+                background-size: cover;
+            }
+            
+            .login-content{
+                position: absolute;
+                left: 50%;
+                top: 10rem;
+                display: block;
+                width: 25rem;
+                height: 15rem;
+                margin-left: -12.5rem;
+                padding-top: 1rem;
+                border-radius: 1rem;
+                background: @white;
+                            
+            }
+            
+            .register-content{
+                position: absolute;
+                left: 50%;
+                top: 8rem;
+                width: 25rem;
+                height: 18rem;
+                margin-left: -12.5rem;
+                padding-top: 1rem;
+                border-radius: 1rem;
+                background: @white;
+            }
+            
+            .forget-password-content{
+                position: absolute;
+                left: 50%;
+                top: 8rem;
+                width: 25rem;
+                height: 18rem;
+                margin-left: -12.5rem;
+                padding-top: 1rem;
+                border-radius: 1rem;
+                background: @white;
+            }
+        }
+        
+        .jackpot-msg{
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            z-index: 1000;
+            display: block;
+            width: 35rem;
+            height: 46rem;
+            margin-left: -17.5rem;
+            margin-top: -27rem;
+            background: url(../../assets/jackpot.png) no-repeat center center;
+            background-size: contain;
+            
+            .close-jackpot-msg{
+                position: absolute;
+                right: 6rem;
+                top: 11rem;
+                width: 1.8rem;
+                height: 1.8rem;
+                border-radius: 50%;
+                background: url(../../assets/close_icon.png) no-repeat center center;
+                background-size: cover;
+            }
+            
+            .jackpot-info{
+                position: absolute;
+                left: 50%;
+                top: 27.5rem;
+                z-index: 1001;
+                width: 14rem;
+                height: 2rem;
+                margin-left: -7rem;
+                
+                p{
+                    text-align: center;
+                    line-height: 2rem;
+                    color: @jackpotYellow;
+                    font-size: 1.5rem;
+                    font-weight: bolder;
+                    
+                }
+            }
+            
+            .jackpot-img{
+                position: absolute;
+                left: 50%;
+                top: 33rem;
+                z-index: 1001;
+                width: 12rem;
+                height: 3rem;
+                margin-left: -6rem;
+            }
+            
+            .conform-get-btn{
+                position: absolute;
+                left: 50%;
+                top: 38rem;
+                z-index: 1001;
+                width: 16rem;
+                height: 3rem;
+                margin-left: -8rem;
+                background: url(../../assets/get_jackpot.png) no-repeat center center;
+                background-size: contain;
+            }
+        }
+    }
+
+    .bottom6rem{
+        padding-bottom: 6/3rem;
+    }
+
+    .clear:after{
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+    //只有下边框的class
+
+    .input-border-line{
+        position: relative;
+        width: 20rem;
+        height: 2rem;
+        margin: 0 auto;
+        margin-top: 1.2rem;
+        margin-bottom: 1.2rem;
+        padding-left: 1.8rem;
+        border: none;
+        border-bottom: 1px solid @bottomLine;
+        
+        .icon-position{
+            position: absolute;
+            left: 0.2rem;
+            top: 0.4rem;
+        }
+        
+        .icon-accounter{
+            width: 1.2rem;
+            height: 1.4rem;
+            background: url(../../assets/user_icon.png) no-repeat center center;
+            background-size: cover;
+        }
+        
+        .icon-checknum{
+            width: 1.2rem;
+            height: 1.3rem;
+            background: url(../../assets/check_icon.png) no-repeat center center;
+            background-size: cover;
+        }
+        
+        .icon-password{
+            width: 1.2rem;
+            height: 1.3rem;
+            background: url(../../assets/password_icon.png) no-repeat center center;
+            background-size: cover;
+        }
+    }
+
+    .noborder-input{
+        width: 100%;
+        height: 100%;
+        border: none;
+        outline: none;
+    }
+
+    //遮罩
+    .cover{
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 900;
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.5);
+    }
+
+    .float-left{
+        float: left;
+        margin-left: 1.7rem;
+    }
+    .float-right{
+        float: right;
+        margin-right: 1.7rem;
+    }
+
+    .tips{
+        line-height: 2rem;
+        font-size: 1rem;
+    }
+    .register-enter{
+        color: @alertRed;
+    }
+    .forget-password-btn{
+        color: @buttonBackgroundBlue;
+    }
+    .btn{
+        min-width: 18rem;
+        min-height: 2.5rem;
+        margin: 0 auto;
+        border: none;
+        border-radius: 0.3rem;
+        outline: none;
+    }
+    .login-btn{
+        background: @buttonBackgroundBlue;
+        color: @white;
+    }
+
+    .login-btn-bar{
+        margin-top: 1.1rem;
+    }
+
+    .get-check-num-btn{
+        position: absolute;
+        right: 0rem;
+        top: -0.7rem;
+        display: block;
+        width: 8rem;
+        height: 2.5rem;
+        line-height: 2.5rem;
+        border-radius: 0.3rem;
+        background: @buttonBackgroundBlue;
+        text-align: center;
+        font-size: 0.5rem;
+        color: @white;
+    }
+
+    .wx-alert-img{
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 10000;
+        width: 100%;
+        height: 100%;
+        background: url(../../assets/tishi.png) no-repeat top right;
+    }
+    .wx-download-img{
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 10000;
+        width: 100%;
+        height: 100%;
+        background: url(../../assets/live_weixin.png) no-repeat top center;
+        background-size: contain;
+    }
+
+
+    //错误提示弹窗
+
+    .errAlertWin{
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        z-index: 1000;
+        width: 24rem;
+        height: 11.5rem;
+        background: @grayBack;
+        margin-left: -12rem;
+        margin-top: -5rem;
+        
+        .close-erralert-win{
+            position: absolute;
+            right: 0.5rem;
+            top: 0.5rem;
+            width: 1.8rem;
+            height: 1.8rem;
+            border-radius: 50%;
+            background: url(../../assets/close_icon.png) no-repeat center center;
+            background-size: cover;
+        }
+        
+        h2{
+            height: 2.5rem;
+            margin-left: 1rem;
+            line-height: 3rem;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        
+        div{
+            width: 20rem;
+            height: 5rem;
+            line-height: 2.5rem;
+            margin: 0 auto;
+            padding: 0.5rem;
+            font-size: 1.5rem;
+        }
+        
+        span{
+            display: block;
+            width: 4rem;
+            height: 2rem;
+            line-height: 3rem;
+            margin-left: 19rem;
+            color: @loginBtnBackground;
+            font-size: 1.2rem;
+        }
+    }
+
+    #cnzz_stat_icon_1261866262{
+        display: none;
+    }
+
+    .-mob-share-ui-button{
+        margin: 0!important;
+    }
+
+
+    .btn-gray{
+        background: @bottomLine;
+        color: @white;
+    }
+    //倒三角
+    .triangle-down {
+        position: absolute;
+        top: 1.3rem;
+        right: 1rem;
+        width: 0;
+        height: 0;
+        border-left: 0.5rem solid transparent;
+        border-right: 0.5rem solid transparent;
+        border-top: 0.5rem solid @white;
+        
+    }
